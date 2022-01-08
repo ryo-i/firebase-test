@@ -3,8 +3,8 @@
         "url": "https://next-app-started.vercel.app/"
     },
     "header": {
-        "title":"Nextアプリスターターキット",
-        "text": "Next.js + TypeScript + CSS in JS環境"
+        "title":"FirebaseのDB読み込みテスト",
+        "text": "Next環境からFirebaseのRealtime DatabaseやFirestoreのデータを読み込むテスト"
     },
     "main": {
         "title":"メインページです",

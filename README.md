@@ -10,11 +10,11 @@
 
 ## 作っているもの
 
-※参考：[プレビュー](https://firebase-test-eta.vercel.app)
+※参考：[プレビュー](https://firebase-test-ryo-i.vercel.app)
 
 ## 進捗（コミット）
 
-- Vercelにデプロイ [#1](https://github.com/ryo-i/firebase-test/issues/1)
+- ページのタイトルを修正 [#1](https://github.com/ryo-i/firebase-test/issues/1)
 
 ## 詳細（ブログ）
 
