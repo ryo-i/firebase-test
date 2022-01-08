@@ -1,20 +1,22 @@
 # FirebaseのDB読み込みテスト
 
 やりたいこと
+* Fetch APIでJSONファイルのデータを読み込む[着手中]
+* Fetch APIでGoogle Sheets APIのデータを読み込む[未]
 * Firebase関数でRealtime Databaseのデータを読み込む[未]
 * Fetch APIでRealtime Databaseのデータを読み込む[未]
 * Firebase関数でFirestoreのデータを読み込む[未]
 * Fetch APIでFirestoreのデータを読み込む[未]
-* Fetch APIでGoogle Sheets APIのデータを読み込む（おまけ）[未]
+
 
 
 ## 作っているもの
 
-※参考：[プレビュー](https://firebase-test-ryo-i.vercel.app)
+※参考：[プレビュー](https://firebase-test-eta.vercel.app)
 
 ## 進捗（コミット）
 
-- ページのタイトルを修正 [#1](https://github.com/ryo-i/firebase-test/issues/1)
+- ローカルのJSONファイルをFetch APIで読み込みconsoleに表示 [#2](https://github.com/ryo-i/firebase-test/issues/2)
 
 ## 詳細（ブログ）
 

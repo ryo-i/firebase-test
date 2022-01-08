@@ -1,6 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 import styled from 'styled-components';
-import { hello } from '../modules/hello/hello';
+import { member } from '../modules/member/member';
 import { inner } from '../data/data.json';
 
 
@@ -17,7 +17,8 @@ function Inner() {
   const [text, setText] = useState('へんじがない、ただのしかばねのようだ。');
 
   useEffect(() => {
-    hello();
+    const url = 'data/member.json';
+    member(url);
   });
 
   // JSX
