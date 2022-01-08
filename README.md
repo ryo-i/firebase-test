@@ -1,20 +1,20 @@
 # FirebaseのDB読み込みテスト
 
 やりたいこと
-* Firebase関数でRealtime Databaseのデータを読み込む
-* Fetch APIでRealtime Databaseのデータを読み込む
-* Firebase関数でFirestoreのデータを読み込む
-* Fetch APIでFirestoreのデータを読み込む
-* Fetch APIでGoogle Sheets APIのデータを読み込む（おまけ）
+* Firebase関数でRealtime Databaseのデータを読み込む[未]
+* Fetch APIでRealtime Databaseのデータを読み込む[未]
+* Firebase関数でFirestoreのデータを読み込む[未]
+* Fetch APIでFirestoreのデータを読み込む[未]
+* Fetch APIでGoogle Sheets APIのデータを読み込む（おまけ）[未]
 
 
-## 作ったもの
+## 作っているもの
 
-※参考：[作成中]()
+※参考：[プレビュー](https://firebase-test-eta.vercel.app)
 
 ## 進捗（コミット）
 
-- ファイル一式をアップ [#1](https://github.com/ryo-i/firebase-test/issues/1)
+- Vercelにデプロイ [#1](https://github.com/ryo-i/firebase-test/issues/1)
 
 ## 詳細（ブログ）
 
