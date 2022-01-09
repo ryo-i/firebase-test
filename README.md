@@ -16,7 +16,7 @@
 
 ## 進捗（コミット）
 
-- ローカルのJSONファイルをFetch APIで読み込みconsoleに表示 [#2](https://github.com/ryo-i/firebase-test/issues/2)
+- JSONファイルのデータをページ上に表示 [#2](https://github.com/ryo-i/firebase-test/issues/2)
 
 ## 詳細（ブログ）
 
