@@ -1,7 +1,5 @@
 import React, { useState, useEffect }  from 'react';
 import styled from 'styled-components';
-// import { member } from '../modules/member/member';
-// import { inner } from '../data/data.json';
 
 
 // CSS in JS
@@ -13,52 +11,58 @@ const H2 = styled.h2`
 // Component
 function Inner() {
   // Hooks
-  // const [title, setTitle] = useState('内容が無いよう');
-  // const [text, setText] = useState('へんじがない、ただのしかばねのようだ。');
-  const [group, setGroup] = useState('');
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [members, setMembers] = useState([])
 
 
   useEffect(() => {
-    const url = 'data/member.json';
-    // const members = member(url);
-    // console.log('members', members);
     async function getJsonData (url) {
       try {
         const res = await fetch(url);
         const resJson = await res.json();
-
-        const getGroup = Object.keys(resJson);
-        console.log('getGroup', getGroup);
-        setGroup(getGroup[0]);
-
-        const getMembers = resJson.baetles;
+        setIsLoaded(true);
+        const getMembers = resJson;
         console.log('getMembers', getMembers);
         setMembers(getMembers);
-      } catch(err) {
-          console.log('err', err);
+      } catch(error) {
+        setIsLoaded(true);
+        setError(error);
+        console.log('err', error);
       }
     };
+
+    const url = 'data/member.json';
     getJsonData(url);
   }, []);
 
 
   // JSX
-  return (
-    <>
-      <section>
-          <h2>JSONファイルから読み込み</h2>
-          <p>{group}：</p>
-          <ul>
-            {members.map(member => (
-              <li key={member.id}>
-                {member.name}（{member.part}）
-              </li>
-            ))}
-          </ul>
-      </section>
-    </>
-  );
+  if (error) {
+    return <p>エラー: {error.message}</p>;
+  } else if (!isLoaded) {
+    return <p>読み込み中...</p>;
+  } else {
+    return (
+      <>
+        <section>
+            <h2>JSONファイルから読み込み</h2>
+            <dl>
+              <dt>ビートルズ：</dt>
+              <dd>
+                <ul>
+                  {members.map(member => (
+                    <li key={member.id}>
+                      {member.name}（{member.part}）
+                    </li>
+                  ))}
+                </ul>
+              </dd>
+            </dl>
+        </section>
+      </>
+    );
+  }
 }
 
 export default Inner;
