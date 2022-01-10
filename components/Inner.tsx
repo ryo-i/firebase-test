@@ -1,4 +1,5 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState, useEffect, useContext }  from 'react';
+import { Context } from '../pages/index';
 import styled from 'styled-components';
 
 
@@ -14,6 +15,9 @@ function Inner() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [members, setMembers] = useState([])
+  const context = useContext(Context);
+  const url = context.url;
+  console.log('url', url);
 
 
   useEffect(() => {
@@ -32,7 +36,6 @@ function Inner() {
       }
     };
 
-    const url = 'data/member.json';
     getJsonData(url);
   }, []);
 
@@ -45,21 +48,18 @@ function Inner() {
   } else {
     return (
       <>
-        <section>
-            <h2>JSONファイルから読み込み</h2>
-            <dl>
-              <dt>ビートルズ：</dt>
-              <dd>
-                <ul>
-                  {members.map(member => (
-                    <li key={member.id}>
-                      {member.name}（{member.part}）
-                    </li>
-                  ))}
-                </ul>
-              </dd>
-            </dl>
-        </section>
+        <dl>
+          <dt>ビートルズ：</dt>
+          <dd>
+            <ul>
+              {members.map(member => (
+                <li key={member.id}>
+                  {member.name}（{member.part}）
+                </li>
+              ))}
+            </ul>
+          </dd>
+        </dl>
       </>
     );
   }

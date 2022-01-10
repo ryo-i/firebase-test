@@ -1,3 +1,4 @@
+import React, { createContext } from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Inner from '../components/Inner';
@@ -8,6 +9,13 @@ import Data from '../data/data.json';
 const headerTitle = Data.header.title;
 const headerText = Data.header.text;
 
+const data = {
+  json: {
+    url: 'data/member.json'
+  }
+};
+
+export const Context: React.Context<{url: string;}> = createContext(data.json);
 
 function Home() {
   return (
@@ -20,7 +28,12 @@ function Home() {
       </Head>
       <Header />
       <main>
-        <Inner />
+        <section>
+          <h2>JSONファイルから読み込み</h2>
+          <Context.Provider value={data.json} >
+            <Inner />
+          </Context.Provider>
+        </section>
       </main>
       <Footer />
     </>
