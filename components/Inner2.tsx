@@ -3,7 +3,7 @@ import { Context } from '../pages/index';
 
 
 // Component
-function Inner() {
+function Inner2() {
   // Hooks
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -21,7 +21,22 @@ function Inner() {
         setIsLoaded(true);
         const getMembers = resJson;
         console.log('getMembers', getMembers);
-        setMembers(getMembers);
+
+        const keyId = getMembers.values[0][0];
+        const keyName = getMembers.values[0][1];
+        const keyPart = getMembers.values[0][2];
+
+        const resultMembers = [];
+        for (var i = 1; i < getMembers.values.length; i++) {
+          const thisMember = {};
+          thisMember[keyId] = getMembers.values[i][0];
+          thisMember[keyName] = getMembers.values[i][1];
+          thisMember[keyPart] = getMembers.values[i][2];
+          resultMembers.push(thisMember);
+        }
+        console.log('resultMembers', resultMembers);
+
+        setMembers(resultMembers);
       } catch(error) {
         setIsLoaded(true);
         setError(error);
@@ -58,4 +73,4 @@ function Inner() {
   }
 }
 
-export default Inner;
+export default Inner2;

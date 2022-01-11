@@ -2,6 +2,7 @@ import React, { createContext } from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Inner from '../components/Inner';
+import Inner2 from '../components/Inner2';
 import Footer from '../components/Footer';
 import Data from '../data/data.json';
 
@@ -9,13 +10,16 @@ import Data from '../data/data.json';
 const headerTitle = Data.header.title;
 const headerText = Data.header.text;
 
-const data = {
+const url = {
   json: {
     url: 'data/member.json'
+  },
+  spreadsheet: {
+    url: 'https://sheets.googleapis.com/v4/spreadsheets/1jQfqA6yPurQWpkKYaU4mYiMwG_VXx6bgCCc-1zoZ4Tc/values/beatles?key=AIzaSyBju9iq3ug6gJMqyVsoGX_YByHt6L3Dh0c'
   }
 };
 
-export const Context: React.Context<{url: string;}> = createContext(data.json);
+export const Context: React.Context<{url: string;}> = createContext(url.json);
 
 function Home() {
   return (
@@ -30,8 +34,14 @@ function Home() {
       <main>
         <section>
           <h2>JSONファイルから読み込み</h2>
-          <Context.Provider value={data.json} >
+          <Context.Provider value={url.json} >
             <Inner />
+          </Context.Provider>
+        </section>
+        <section>
+          <h2>スプレッドシートから読み込み</h2>
+          <Context.Provider value={url.spreadsheet} >
+            <Inner2 />
           </Context.Provider>
         </section>
       </main>

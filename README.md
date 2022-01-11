@@ -14,7 +14,7 @@
 
 ## 進捗（コミット）
 
-- urlをContextから読み込み [#2](https://github.com/ryo-i/firebase-test/issues/2)
+- スプレッドシートからデータを読み込み [#2](https://github.com/ryo-i/firebase-test/issues/2)
 
 ## 詳細（ブログ）
 
