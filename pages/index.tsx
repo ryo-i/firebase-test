@@ -16,6 +16,9 @@ const url = {
   },
   spreadsheet: {
     url: 'https://sheets.googleapis.com/v4/spreadsheets/1jQfqA6yPurQWpkKYaU4mYiMwG_VXx6bgCCc-1zoZ4Tc/values/beatles?key=AIzaSyBju9iq3ug6gJMqyVsoGX_YByHt6L3Dh0c'
+  },
+  realtimeDatabase: {
+    url: 'https://fir-test-79045-default-rtdb.asia-southeast1.firebasedatabase.app/.json'
   }
 };
 
@@ -42,6 +45,12 @@ function Home() {
           <h2>スプレッドシートから読み込み</h2>
           <Context.Provider value={url.spreadsheet} >
             <Inner2 />
+          </Context.Provider>
+        </section>
+        <section>
+          <h2>Realtime Databaseから読み込み</h2>
+          <Context.Provider value={url.realtimeDatabase} >
+            <Inner />
           </Context.Provider>
         </section>
       </main>
