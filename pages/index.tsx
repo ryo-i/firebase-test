@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Inner from '../components/Inner';
 import Inner2 from '../components/Inner2';
+import Inner3 from '../components/Inner3';
 import Footer from '../components/Footer';
 import Data from '../data/data.json';
 
@@ -19,6 +20,9 @@ const url = {
   },
   realtimeDatabase: {
     url: 'https://fir-test-79045-default-rtdb.asia-southeast1.firebasedatabase.app/.json'
+  },
+  firestore: {
+    url: 'https://firestore.googleapis.com/v1/projects/fir-test-79045/databases/(default)/documents/member/'
   }
 };
 
@@ -51,6 +55,12 @@ function Home() {
           <h2>Realtime Databaseから読み込み</h2>
           <Context.Provider value={url.realtimeDatabase} >
             <Inner />
+          </Context.Provider>
+        </section>
+        <section>
+          <h2>Firesroteから読み込み</h2>
+          <Context.Provider value={url.firestore} >
+            <Inner3 />
           </Context.Provider>
         </section>
       </main>
