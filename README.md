@@ -1,11 +1,9 @@
-# FirebaseのDB読み込みテスト
+# Google Sheets API、Realtime Database、FirestoreをFetch APIで読み込む
 
 やりたいこと
 * Fetch APIでJSONファイルのデータを読み込む[済]
 * Fetch APIでGoogle Sheets APIのデータを読み込む[済]
-* Firebase関数でRealtime Databaseのデータを読み込む[未]
 * Fetch APIでRealtime Databaseのデータを読み込む[済]
-* Firebase関数でFirestoreのデータを読み込む[未]
 * Fetch APIでFirestoreのデータを読み込む[済]
 
 ## 作っているもの
@@ -14,7 +12,7 @@
 
 ## 進捗（コミット）
 
-- Firestoreからデータを読み込み [#2](https://github.com/ryo-i/firebase-test/issues/2)
+- ブログ記事にまとめ中 [#3](https://github.com/ryo-i/firebase-test/issues/3)
 
 ## 詳細（ブログ）
 
