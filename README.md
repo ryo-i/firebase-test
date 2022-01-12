@@ -1,12 +1,11 @@
-# Google Sheets API、Realtime Database、FirestoreをFetch APIで読み込む
+# スプレッドシート、Realtime Database、FirestoreのデータをFetch APIで読み込む
 
-やりたいこと
-* Fetch APIでJSONファイルのデータを読み込む[済]
-* Fetch APIでGoogle Sheets APIのデータを読み込む[済]
-* Fetch APIでRealtime Databaseのデータを読み込む[済]
-* Fetch APIでFirestoreのデータを読み込む[済]
+* Fetch APIでJSONファイルのデータを読み込む
+* Fetch APIでスプレッドシートのデータを読み込む
+* Fetch APIでRealtime Databaseのデータを読み込む
+* Fetch APIでFirestoreのデータを読み込む
 
-## 作っているもの
+## 作ったもの
 
 ※参考：[プレビュー](https://firebase-test-eta.vercel.app)
 
