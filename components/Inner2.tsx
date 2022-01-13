@@ -12,7 +12,6 @@ function Inner2() {
   const url = context.url;
   console.log('url', url);
 
-
   useEffect(() => {
     async function getJsonData (url) {
       try {

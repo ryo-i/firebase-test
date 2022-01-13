@@ -10,13 +10,15 @@ import Data from '../data/data.json';
 
 const headerTitle = Data.header.title;
 const headerText = Data.header.text;
+const key = process.env.NEXT_PUBLIC_TEST;
+console.log('key', key);
 
 const url = {
   json: {
     url: 'data/member.json'
   },
   spreadsheet: {
-    url: 'https://sheets.googleapis.com/v4/spreadsheets/1jQfqA6yPurQWpkKYaU4mYiMwG_VXx6bgCCc-1zoZ4Tc/values/beatles?key=AIzaSyBju9iq3ug6gJMqyVsoGX_YByHt6L3Dh0c'
+    url: 'https://sheets.googleapis.com/v4/spreadsheets/1jQfqA6yPurQWpkKYaU4mYiMwG_VXx6bgCCc-1zoZ4Tc/values/beatles?key=' + key
   },
   realtimeDatabase: {
     url: 'https://fir-test-79045-default-rtdb.asia-southeast1.firebasedatabase.app/.json'
