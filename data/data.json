@@ -4,7 +4,7 @@
     },
     "header": {
         "title":"FirebaseのDB読み込みテスト",
-        "text": "Next環境からFirebaseのRealtime DatabaseやFirestoreのデータを読み込むテスト"
+        "text": "Next環境からFetch APIでスプレッドシート、Realtime Database、Firestoreのデータを読み込むテスト"
     },
     "main": {
         "title":"メインページです",

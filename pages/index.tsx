@@ -11,7 +11,6 @@ import Data from '../data/data.json';
 const headerTitle = Data.header.title;
 const headerText = Data.header.text;
 const key = process.env.NEXT_PUBLIC_GOOGLE_KEY;
-console.log('key', key);
 
 const url = {
   json: {
