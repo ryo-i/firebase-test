@@ -11,7 +11,7 @@
 
 ## 進捗（コミット）
 
-- スプシのkeyを環境変数に変更テスト [#2](https://github.com/ryo-i/firebase-test/issues/2)
+- スプシのkeyを環境変数にを変更 [#2](https://github.com/ryo-i/firebase-test/issues/2)
 - ブログ記事にまとめ中 [#3](https://github.com/ryo-i/firebase-test/issues/3)
 
 ## 詳細（ブログ）
