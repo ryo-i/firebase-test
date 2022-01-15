@@ -11,7 +11,7 @@
 
 ## 進捗（コミット）
 
-- descriptionを変更 [#2](https://github.com/ryo-i/firebase-test/issues/2)
+- Google Sheets APIの操作方法を調べ中 [#2](https://github.com/ryo-i/firebase-test/issues/2)
 - ブログ記事にまとめ中 [#3](https://github.com/ryo-i/firebase-test/issues/3)
 
 ## 詳細（ブログ）
