@@ -7,8 +7,8 @@ import Data from '../data/data.json';
 
 
 const headerTitle = Data.header.title;
-const pageTitle = 'このアプリについて';
-const pageText = 'アプリの概要をここに書く。';
+const pageTitle = '作者について';
+const pageText = 'ブログ記事の作成事例として作りました。';
 const headTitle = pageTitle + ' | ' + headerTitle;
 
 
@@ -51,29 +51,14 @@ function About() {
             <h1>{ pageTitle }</h1>
             <p dangerouslySetInnerHTML={{ __html: pageText }}></p>
             <section>
-                <h2>使い方</h2>
-                <section>
-                    <h3>タイトル</h3>
-                    <p>説明説明説明説明説明説明説明説明</p>
-                </section>
-                <section>
-                    <h3>タイトル</h3>
-                    <p>説明説明説明説明説明説明説明説明</p>
-                </section>
-                <section>
-                    <h3>タイトル</h3>
-                    <p>説明説明説明説明説明説明説明説明</p>
-                </section>
-            </section>
-            <section>
                 <h2>詳細</h2>
                 <section>
                     <h3>ブログ</h3>
-                    <p><a href="https://www.i-ryo.com/entry/xxxx">タイトル - クモのようにコツコツと</a></p>
+                    <p><a href="https://www.i-ryo.com/entry/2022/01/16/102344">【React】Realtime Database、Firestore(&スプレッドシート)のデータをFetch APIで読み込む(Next.js環境) - クモのようにコツコツと</a></p>
                 </section>
                 <section>
                     <h3>ソースコード（GitHub）</h3>
-                    <p><a href="https://github.com/ryo-i/xxxxx">リポジトリ</a></p>
+                    <p><a href="https://github.com/ryo-i/firebase-test">リポジトリ</a></p>
                 </section>
             </section>
             <Profile />

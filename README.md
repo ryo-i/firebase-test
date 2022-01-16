@@ -11,9 +11,8 @@
 
 ## 進捗（コミット）
 
-- Google Sheets APIの操作方法を調べ中 [#2](https://github.com/ryo-i/firebase-test/issues/2)
-- ブログ記事にまとめ中 [#3](https://github.com/ryo-i/firebase-test/issues/3)
+- ブログ記事完成→リンク追加 [#3](https://github.com/ryo-i/firebase-test/issues/3)
 
 ## 詳細（ブログ）
 
-※参考：[作成中]()
+※参考：[【React】Realtime Database、Firestore(&スプレッドシート)のデータをFetch APIで読み込む(Next.js環境)](https://www.i-ryo.com/entry/2022/01/16/102344)
